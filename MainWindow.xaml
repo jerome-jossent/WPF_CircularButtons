@@ -1,0 +1,136 @@
+﻿<Window x:Class="arc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:arc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="800">
+    <Grid x:Name="grd">
+
+
+        <!--http://csharphelper.com/blog/2015/09/draw-an-outlined-path-in-wpf-and-c/-->
+        <Path Stroke="Black" StrokeThickness="20" Name="scribblePath">
+            <Path.Data>
+                <PathGeometry x:Name="scribbleGeometry"
+            Figures="M 20,20 C 200,0 0,200 40,60
+                L 150,30 C 60,200 200,150 200,60
+                M 70,140 L 150,240 180,170 30,200
+                M 270,70 L 270,230 200,200 Z"/>
+            </Path.Data>
+        </Path>
+
+
+
+
+        <Path Stroke="Black" StrokeThickness="1" Fill="#FFCCFF" Height="100" Width="100" Name="btn_1" MouseEnter="ME" MouseDown="MD" MouseLeave="ML">
+            <Path.LayoutTransform>
+                <RotateTransform CenterX="0" CenterY="0" Angle="-80"/>
+            </Path.LayoutTransform>
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Intersect">
+                    <CombinedGeometry.Geometry1>
+                        <GeometryGroup>
+                            <CombinedGeometry GeometryCombineMode="Exclude">
+                                <CombinedGeometry.Geometry1>
+                                    <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50" />
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <EllipseGeometry RadiusX="25" RadiusY="25" Center="50,50" />
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </GeometryGroup>
+                    </CombinedGeometry.Geometry1>
+
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="55,55,50,50" />
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+
+
+        <Path Stroke="Black" StrokeThickness="1" Fill="#FFCCFF" Height="100" Width="100" Name="btn_2" MouseEnter="ME" MouseDown="MD" MouseLeave="ML">
+            <Path.LayoutTransform>
+                <RotateTransform CenterX="0" CenterY="0" Angle="100"/>
+            </Path.LayoutTransform>
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Intersect">
+                    <CombinedGeometry.Geometry1>
+                        <GeometryGroup>
+                            <CombinedGeometry GeometryCombineMode="Exclude">
+                                <CombinedGeometry.Geometry1>
+                                    <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50" />
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <EllipseGeometry RadiusX="25" RadiusY="25" Center="50,50" />
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </GeometryGroup>
+                    </CombinedGeometry.Geometry1>
+
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="55,55,50,50" />
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+
+        <Path Stroke="Black" StrokeThickness="1" Fill="#FFCCFF" Height="100" Width="100" Name="btn_3" MouseEnter="ME" MouseDown="MD" MouseLeave="ML">
+            <Path.LayoutTransform>
+                <RotateTransform CenterX="0" CenterY="0" Angle="10"/>
+            </Path.LayoutTransform>
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Intersect">
+                    <CombinedGeometry.Geometry1>
+                        <GeometryGroup>
+                            <CombinedGeometry GeometryCombineMode="Exclude">
+                                <CombinedGeometry.Geometry1>
+                                    <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50" />
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <EllipseGeometry RadiusX="25" RadiusY="25" Center="50,50" />
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </GeometryGroup>
+                    </CombinedGeometry.Geometry1>
+
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="55,55,50,50" />
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+
+
+
+        <Path Stroke="Black" StrokeThickness="1" Fill="#FFCCFF" Height="100" Width="100" Name="btn_4" MouseEnter="ME" MouseDown="MD" MouseLeave="ML">
+            <Path.LayoutTransform>
+                <RotateTransform CenterX="0" CenterY="0" Angle="190"/>
+            </Path.LayoutTransform>
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Intersect">
+                    <CombinedGeometry.Geometry1>
+                        <GeometryGroup>
+                            <CombinedGeometry GeometryCombineMode="Exclude">
+                                <CombinedGeometry.Geometry1>
+                                    <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50" />
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <EllipseGeometry RadiusX="25" RadiusY="25" Center="50,50" />
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </GeometryGroup>
+                    </CombinedGeometry.Geometry1>
+
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="55,55,50,50" />
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+
+
+
+    </Grid>
+</Window>
